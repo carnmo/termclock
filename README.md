@@ -1,2 +1,13 @@
 # termclock
-A clock for your terminal
+
+A terminal clock for chronologists and time travelers.
+
+## Usage
+
+### Start
+
+```./termclock```
+
+### Stop
+
+```CTRL-C```

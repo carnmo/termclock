@@ -21,10 +21,10 @@ CFLAGS+=-Wextra
 CFLAGS+=-Wpedantic
 
 all: $(TARGET)
->$(RM) $(OBJECTS)
 
 clean:
 >$(RM) $(TARGET)
+>$(RM) $(OBJECTS)
 
 run:
 >./$(TARGET)

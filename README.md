@@ -4,6 +4,10 @@
 
 A terminal clock for chronologists and time travelers.
 
+## Building
+
+```make```
+
 ## Usage
 
 ### Start

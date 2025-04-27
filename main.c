@@ -106,7 +106,6 @@ static const unsigned char font[11 * DIGIT_SIZE] = {
 };
 
 void drawclock(struct tm *tm){
-	unsigned char row, col, digit = 0;
 	unsigned char clock[DIGITS] = {
 		tm->tm_hour / 10,
 		tm->tm_hour % 10,
@@ -120,9 +119,9 @@ void drawclock(struct tm *tm){
 
 	printf(CLEAR);
 
-	for(row = 0; row < FONT_HEIGHT; row++){
-		for(digit = 0; digit < DIGITS; digit++){
-			for(col = 0; col < FONT_WIDTH; col++){
+	for(unsigned char row = 0; row < FONT_HEIGHT; row++){
+		for(unsigned char digit = 0; digit < DIGITS; digit++){
+			for(unsigned char col = 0; col < FONT_WIDTH; col++){
 				if(font[clock[digit] * DIGIT_SIZE + row * FONT_WIDTH + col]){
 					printf("%s", CHARACTER);
 				}else{

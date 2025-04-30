@@ -8,7 +8,12 @@
 #define CURSOR_OFF "\033[?25l"
 #define CURSOR_ON "\033[?25h"
 
+#ifdef _WIN32 
+#define CHARACTER "\xDB"
+#else
 #define CHARACTER "\u2588"
+#endif
+
 #define DIGITS 8
 #define DIGIT_SIZE (FONT_WIDTH * FONT_HEIGHT)
 #define FONT_HEIGHT 8
